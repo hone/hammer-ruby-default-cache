@@ -36,7 +36,7 @@ ext = "ext"
 
 FileUtils.mkdir_p(ext)
 Dir.chdir(ext) do
-  pipe "curl #{vendor_url}/libyaml-0.1.4.tgz -s -o - | tar xzf -"
+  pipe "curl #{vendor_url}/libyaml-0.1.5.tgz -s -o - | tar xzf -"
 end
 
 gem_home     = "#{output_dir}/vendor/bundle/ruby/2.0.0"
